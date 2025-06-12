@@ -1,25 +1,25 @@
 <?php
-include 'conexion.php';  // Asegurate de que exista y esté en la misma carpeta
+session_start();
+include 'conexion.php';
 
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
-  // Tomamos los datos del formulario correctamente
-$nombre = $_POST['nombre'] ?? '';
-  $correo = $_POST['email'] ?? '';
-  $contraseña = $_POST['password'] ?? '';
+  $correo = $_POST['correo'] ?? '';
+  $contraseña = $_POST['contraseña'] ?? '';
 
-  // Validar que no estén vacíos
-  if (!empty($correo) && !empty($contraseña)) {
-    // Insertar datos
-    $insertar = "INSERT INTO usuario (nombre, correo, contraseña) VALUES ('$nombre', '$correo', '$contraseña')";
-    $resultado = mysqli_query($conexion, $insertar);
+  // Buscar usuario
+  $query = "SELECT * FROM usuario WHERE correo='$correo' AND contraseña='$contraseña'";
+  $resultado = mysqli_query($conexion, $query);
 
-    if ($resultado) {
-      echo "✅ Registro exitoso.";
-    } else {
-      echo "❌ Error al registrar: " . mysqli_error($conexion);
-    }
+  if (mysqli_num_rows($resultado) == 1) {
+    $usuario = mysqli_fetch_assoc($resultado);
+    $_SESSION['usuario'] = $usuario['nombre'];  // O puedes guardar más datos si querés
+
+    echo "<div class='alert alert-success mt-4'>Bienvenido, " . htmlspecialchars($usuario['nombre']) . ".</div>";
+    // Redireccionar
+    // header("Location: home.php");
+    // exit();
   } else {
-    echo "❗ Faltan campos obligatorios.";
+    echo "<div class='alert alert-danger mt-4'>Correo o contraseña incorrectos.</div>";
   }
 }
 ?>
