@@ -12,7 +12,11 @@
   </header>
   <main>
     <a class="btn" href="login.html">Iniciar sesión</a>
-    <a class="btn" href="registro.html">Registrarse</a>
+    <a class="btn" href="login.php" target="_blank">Registrarse</a>
   </main>
+  <?php
+header("Location: login.php");
+exit();
+?>
 </body>
 </html>
