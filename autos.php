@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Autos</title>
+</head>
+<body>
+    <header class="Encabezado">
+        <img src="C:\Users\emily\Downloads/destiny.jpg" alt="">
+        <header class="Encabezado">
+        <img src="C:\Users\emily\Downloads/destiny.jpg" alt="">
+        <nav class="menu">
+            <br><br>
+            <a href="vuelos.php" class="styled-link">Vuelos</a>
+            <a href="pages/" class="styled-link">Paquetes</a>
+            <a href="hospedaje.php"class="styled-link">Hospedaje</a>
+            <a href="autos.php" class="styled-link">Autos</a>
+            <a href="contacto.php" class="styled-link">Contactos</a>
+            <a href="#" class="carrito"><i class="fa-solid fa-cart-shopping"></i></a>
+            <button class="boton"><a href="login.php">Ingresar</a></button>
+        </nav>
+    </header>
+
+</body>
+</html>

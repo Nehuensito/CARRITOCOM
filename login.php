@@ -15,7 +15,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $_SESSION['usuario'] = $usuario['nombre'];  // O puedes guardar más datos si querés
 
     echo "<div class='alert alert-success mt-4'>Bienvenido, " . htmlspecialchars($usuario['nombre']) . ".</div>";
-    // Redireccionar
+    // Redireccionars
     // header("Location: home.php");
     // exit();
   } else {
@@ -31,6 +31,19 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
   <title>Login - Portal Deportivo</title>
   </head>
     <body>
+      <header class="Encabezado">
+        <img src="C:\Users\emily\Downloads/destiny.jpg" alt="">
+        <nav class="menu">
+            <br><br>
+            <a href="vuelos.php" class="styled-link">Vuelos</a>
+            <a href="pages/" class="styled-link">Paquetes</a>
+            <a href="hospedaje.php"class="styled-link">Hospedaje</a>
+            <a href="autos.php" class="styled-link">Autos</a>
+            <a href="contacto.php" class="styled-link">Contactos</a>
+            <a href="#" class="carrito"><i class="fa-solid fa-cart-shopping"></i></a>
+            <button class="boton"><a href="login.php">Ingresar</a></button>
+        </nav>
+    </header>
         <div class="login-container">
         <h2>Iniciar Sesión</h2>
     <form action="login.php" method="POST">

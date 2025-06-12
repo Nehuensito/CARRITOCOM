@@ -3,20 +3,25 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Destiny</title>
+    <link rel="stylesheet" href="menu.css">
+     <link rel="shortcut icon" href="" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
 <body>
-<header>
-    <h1>Portal Deportivo</h1>
-    <p>Tu lugar para comprar todo lo necesario para deportes al aire libre</p>
-  </header>
-  <main>
-    <a class="btn" href="login.html">Iniciar sesión</a>
-    <a class="btn" href="login.php" target="_blank">Registrarse</a>
-  </main>
-  <?php
-header("Location: login.php");
-exit();
-?>
+
+    <header class="Encabezado">
+        <img src="C:\Users\emily\Downloads/destiny.jpg" alt="">
+        <nav class="menu">
+            <br><br>
+            <a href="vuelos.php" class="styled-link">Vuelos</a>
+            <a href="pages/" class="styled-link">Paquetes</a>
+            <a href="hospedaje.php"class="styled-link">Hospedaje</a>
+            <a href="autos.php" class="styled-link">Autos</a>
+            <a href="contacto.php" class="styled-link">Contactos</a>
+            <a href="#" class="carrito"><i class="fa-solid fa-cart-shopping"></i></a>
+            <button class="boton"><a href="login.php">Ingresar</a></button>
+        </nav>
+    </header>
 </body>
 </html>
