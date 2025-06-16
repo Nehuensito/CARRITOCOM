@@ -7,6 +7,9 @@
     <link rel="stylesheet" href="menu.css">
      <link rel="shortcut icon" href="" type="image/x-icon">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    
+
+
 </head>
 <body>
 
@@ -23,5 +26,43 @@
             <button class="boton"><a href="login.php">Ingresar</a></button>
         </nav>
     </header>
+    
+    <div id="carrito" class="carrito">
+        <h3>🛒 Carrito</h3>
+        <div id="carrito-items"></div>
+        <p class="total">Total: $<span id="carrito-total">0.00</span></p>
+    </div>
+
+    <main>
+        <h1>Explorá nuestros paquetes</h1>
+        <div class="productos">
+            <!-- Producto 1 -->
+            <div class="card">
+                <img src="brasil.jpg" alt="Paquete a Brasil">
+                <h2>Paquete a Brasil</h2>
+                <p class="precio">$800</p>
+                <button onclick="agregarAlCarrito('Brasil 7 días', 800)">Agregar al carrito</button>
+            </div>
+
+            <!-- Producto 2 -->
+            <div class="card">
+                <img src="europa.jpg" alt="Tour por Europa">
+                <h2>Tour por Europa</h2>
+                <p class="precio">$1500</p>
+                <button onclick="agregarAlCarrito('Europa 15 días', 1500)">Agregar al carrito</button>
+            </div>
+
+            <!-- Producto 3 -->
+            <div class="card">
+                <img src="patagonia.jpg" alt="Viaje a la Patagonia">
+                <h2>Viaje a la Patagonia</h2>
+                <p class="precio">$950</p>
+                <button onclick="agregarAlCarrito('Bariloche 5 días', 950)">Agregar al carrito</button>
+            </div>
+        </div>
+    </main>
+
+    <script src="carrito.js"></script>
+
 </body>
 </html>

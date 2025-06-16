@@ -89,5 +89,107 @@
 }
 
 
+/* Sección de productos con tarjetas */
+.productos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 25px;
+    padding: 40px 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
 
+.card {
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    width: 260px;
+    text-align: center;
+    padding: 20px 15px;
+    transition: transform 0.2s ease;
+}
 
+.card:hover {
+    transform: scale(1.03);
+}
+
+.card img {
+    width: 100%;
+    height: 160px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.card h2 {
+    font-size: 20px;
+    margin-top: 10px;
+    color: #222;
+}
+
+.card .precio {
+    color: #1390ff;
+    font-size: 18px;
+    font-weight: bold;
+    margin: 8px 0;
+}
+
+.card button {
+    background-color: #1390ff;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+.card button:hover {
+    background-color: #0f78d1;
+}
+
+/* Carrito flotante a la izquierda */
+#carrito {
+    position: fixed;
+    top: 120px;
+    left: 20px;
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    width: 260px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    z-index: 999;
+    border: 1px solid #ccc;
+}
+
+#carrito h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+#carrito-items div {
+    margin-bottom: 10px;
+    font-size: 15px;
+}
+
+#carrito-items button {
+    background-color: #e0e0e0;
+    border: none;
+    padding: 4px 8px;
+    margin-left: 5px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+#carrito-items button:hover {
+    background-color: #ccc;
+}
+
+.total {
+    margin-top: 15px;
+    font-weight: bold;
+    font-size: 16px;
+    color: #000;
+}
