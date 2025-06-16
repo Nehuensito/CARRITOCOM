@@ -58,3 +58,21 @@ function modificarCantidad(nombre, cambio) {
         renderizarCarrito();
     }
 }
+// Esperar al DOM para agregar el evento
+document.addEventListener("DOMContentLoaded", () => {
+    const toggleBtn = document.getElementById("carrito-toggle");
+    const carrito = document.getElementById("carrito");
+
+    toggleBtn.addEventListener("click", () => {
+        carrito.classList.toggle("oculto");
+    });
+});
+document.addEventListener("DOMContentLoaded", () => {
+    const toggleBtn = document.getElementById("carrito-toggle");
+    const carritoBox = document.getElementById("carrito");
+
+    toggleBtn.addEventListener("click", (e) => {
+        e.preventDefault(); // evita salto de link #
+        carritoBox.classList.toggle("oculto");
+    });
+});
