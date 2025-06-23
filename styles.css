@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap');
+
 /* ====================
    RESETEO BÁSICO
 ==================== */
@@ -11,84 +13,294 @@
    ENCABEZADO Y MENÚ
 ==================== */
 .Encabezado {
-  height: 70px;
-  display: flex;
-  justify-content: space-between;
-  max-width: 1200px;
-  margin: 0 auto;
+    height:70px;
+    display: flex;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto; 
+    align-items: center;
+    padding: 20px;
 }
 
 .Encabezado img {
-  width: 250px;
-  height: 100px;
-  margin: 30px 10px 0 0;
+    width: 250px;
+    height: 100px;
+    margin-top: 30px;
+    margin-right: 10px;
 }
 
 .menu {
-  margin-right: 18px;
+    margin-right: 18px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
 }
 
 .styled-link {
-  position: relative;
-  display: inline-block;
-  margin-left: 15px;
-  font-family: "Bebas Neue", sans-serif;
-  font-size: 20px;
-  color: #000;
-  text-decoration: none;
-  padding: 5px 0;
-  transition: color 0.3s ease;
+    margin-left: 15px;
+    font-family: "Lexend", sans-serif;
+    font-weight: 500;
+    font-size: 20px;
+    color: #000000;
+    text-decoration: none;
+    padding: 5px 0;
+    transition: color 0.3s ease;
 }
 
 .styled-link::before {
-  content: '';
-  position: absolute;
-  width: 100%;
-  height: 2px;
-  bottom: 0;
-  left: 0;
-  background-color: #1390ff;
-  visibility: hidden;
-  transform: scaleX(0);
-  transition: all 0.3s ease-in-out;
-}
-
-.styled-link:hover {
-  color: #1e90ff;
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #1390ff;
+    visibility: hidden;
+    transform: scaleX(0);
+    transition: all 0.3s ease-in-out;
 }
 
 .styled-link:hover::before {
-  visibility: visible;
-  transform: scaleX(1);
+    visibility: visible;
+    transform: scaleX(1);
+}
+
+.styled-link:hover {
+    color: #1e90ff;
 }
 
 .buttom .styled-link {
-  color: #1390ff;
+    color: #1390ff;
 }
 
 .boton {
-  background-color: #000;
-  margin: 15px 0 0 15px;
-  border-radius: 20px;
-  padding: 10px;
-  transition: all 0.3s ease;
+    background-color: #000000;
+    margin-left: 15px;   
+    border-radius: 4px;
+    padding: 8px 16px;
+    margin-top: 15px;
+    transition: all 0.3s ease;
+    border: none;
 }
 
 .boton a {
-  color: #fff;
-  text-decoration: none;
-  font-size: 20px;
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+    font-family: "Lexend", sans-serif;
 }
 
 .boton:hover {
-  background-color: #1390ff;
-  color: #e0e0e0;
+  background-color: #1390ff;  
+  color: #e0e0e0;   
+  border-color: #1390ff;          
 }
 
 .carrito {
-  margin-left: 15px;
-  color: #000;
+    margin-left: 15px;  
+    color: #000000;
 }
+
+/* CONTACTOS */
+
+h1 {
+    font-family: "Lexend", sans-serif;
+    font-weight: 700px;
+    font-style: normal;
+    text-align: center;
+}
+
+form {
+    width: 450px;
+    margin: auto;
+    background-color: #edf2ff;
+    padding: 10px 20px;
+    border-radius: 15px;
+    margin-top: 20px;
+    box-sizing: border-box;
+}
+
+input, textarea {
+    width: 100%;
+    margin-bottom: 20px;
+    padding: 7px;
+    box-sizing: border-box;
+    border: none;
+    font-family: "Lexend", sans-serif;
+}
+
+textarea {
+    min-height: 100px;
+    max-height: 200px;
+    max-width: 100%;
+    font-family: "Lexend", sans-serif;
+}
+
+#boton {
+    background-color: #000000; 
+    border-radius: 20px;
+    padding: 10px;
+    margin-top: 15px;
+    transition: all 0.3s ease;
+    color: white;
+    font-family: "Lexend", sans-serif;
+}
+
+#boton:hover {
+     background-color: #1390ff;  
+     color: #e0e0e0;   
+     border-color: #1390ff;  
+}
+
+/*FOOTER*/
+.destiny-footer {
+  background-color:  #edf2ff;
+  color: #ffffff;
+  padding: 40px 20px 20px;
+   font-family: "Lexend", sans-serif;
+}
+
+.footer-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: 0 auto;
+  gap: 30px;
+}
+
+.footer-section {
+  flex: 1;
+  min-width: 200px;
+  margin-bottom: 20px;
+}
+
+.footer-title {
+  font-size: 18px;
+  margin-bottom: 15px;
+  color: #000000;
+  font-weight: 600;
+}
+
+.social-icons {
+  display: flex;
+  gap: 15px;
+}
+
+.social-icon img {
+  width: 42px;
+  height: 42px;
+  transition: transform 0.3s;
+}
+
+.social-icon img:hover {
+  transform: scale(1.1);
+}
+
+.footer-text {
+  margin: 8px 0;
+  color: #000000;
+  font-size: 14px;
+}
+
+.footer-links {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-links li {
+  margin-bottom: 8px;
+}
+
+.footer-links a {
+  color: #000000;
+  text-decoration: none;
+  transition: color 0.3s;
+  font-size: 14px;
+}
+
+.footer-links a:hover {
+  color: #ffffff;
+}
+
+.share-button {
+  background-color: #333333;
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.share-button:hover {
+  background-color: #444444;
+}
+
+.footer-divider {
+  height: 1px;
+  background-color: #444444;
+  max-width: 1200px;
+  margin: 30px auto;
+}
+
+.footer-copyright {
+  text-align: center;
+  color: #888888;
+  font-size: 12px;
+  padding-top: 10px;
+}
+
+ @media (max-width: 768px) {
+            .Encabezado {
+        flex-direction: column;
+        padding: 10px;
+    }
+    
+    .menu {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 10px;
+        margin-top: 15px;
+    }
+    
+    .menu a.styled-link {
+        padding: 5px 10px;
+    }
+    
+    .menu .boton {
+        margin-top: 10px;
+    }
+            
+            .boton {
+                width: 100%;
+                margin-top: 10px;
+            }
+            
+            h1 {
+                font-size: 1.5rem;
+                padding: 0 15px;
+                margin-top: 100px;
+            }
+            
+            form {
+                padding: 15px;
+            }
+            
+            .footer-container {
+                flex-direction: column;
+                gap: 20px;
+            }
+            
+            .footer-section {
+                text-align: center;
+            }
+            
+            .social-icons {
+                justify-content: center;
+            }
+        }
 
 /* ====================
    SECCIÓN HERO / BUSCADOR
