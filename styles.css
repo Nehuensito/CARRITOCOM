@@ -59,11 +59,6 @@
     transition: all 0.3s ease-in-out;
 }
 
-.styled-link:hover::before {
-    visibility: visible;
-    transform: scaleX(1);
-}
-
 .styled-link:hover {
     color: #1e90ff;
 }
