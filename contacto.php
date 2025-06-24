@@ -6,9 +6,10 @@
     <title>Contacto | Destiny </title>
     <link rel="stylesheet" href="styles.css">
 </head>
+
 <body>
     <header class="Encabezado">
-        <img src="C:\Users\emily\Downloads/destiny.jpg" alt="">
+        <img src="img/destiny.jpg" alt="">
         <nav class="menu">
             <br><br>
             <a href="pages/" class="styled-link">Vuelos</a>
@@ -45,9 +46,9 @@
     <div class="footer-section">
       <h3 class="footer-title">Seguinos en nuestras redes</h3>
       <div class="social-icons">
-        <a href="#" class="social-icon"><img src="img/face.png" alt="Facebook"></a>
-        <a href="#" class="social-icon"><img src="img/ig.png" alt="Instagram"></a>
-        <a href="#" class="social-icon"><img src="img/tw.png" alt="Twitter"></a>
+        <a href="#" class="social-icon"><img src="C:\Users\emily\OneDrive\Escritorio\TRASH SQUASH\face.png" alt="Facebook"></a>
+        <a href="#" class="social-icon"><img src="C:\Users\emily\OneDrive\Escritorio\TRASH SQUASH\ig.png" alt="Instagram"></a>
+        <a href="#" class="social-icon"><img src="C:\Users\emily\Downloads\tw.png" alt="Twitter"></a>
       </div>
     </div>
 

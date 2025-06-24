@@ -9,9 +9,8 @@
   box-sizing: border-box;
 }
 
-/* ====================
-   ENCABEZADO Y MENÚ
-==================== */
+/* MENU DE NAVEGACIÓN */
+
 .Encabezado {
     height:70px;
     display: flex;
@@ -101,6 +100,7 @@
     color: #000000;
 }
 
+
 /* CONTACTOS */
 
 h1 {
@@ -152,7 +152,6 @@ textarea {
      border-color: #1390ff;  
 }
 
-/*FOOTER*/
 .destiny-footer {
   background-color:  #edf2ff;
   color: #ffffff;
@@ -252,55 +251,55 @@ textarea {
   padding-top: 10px;
 }
 
- @media (max-width: 768px) {
-            .Encabezado {
-        flex-direction: column;
-        padding: 10px;
-    }
+@media (max-width: 768px) {
+.Encabezado {
+  flex-direction: column;
+  padding: 10px;
+}
     
-    .menu {
-        flex-wrap: wrap;
-        justify-content: center;
-        gap: 10px;
-        margin-top: 15px;
-    }
+.menu {
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 15px;
+}
     
-    .menu a.styled-link {
-        padding: 5px 10px;
-    }
+.menu a.styled-link {
+  padding: 5px 10px;
+}
     
-    .menu .boton {
-        margin-top: 10px;
-    }
+.menu .boton {
+  margin-top: 10px;
+}
+
+.boton {
+  width: 100%;
+  margin-top: 10px;
+}
             
-            .boton {
-                width: 100%;
-                margin-top: 10px;
-            }
+h1 {
+  font-size: 1.5rem;
+  padding: 0 15px;
+  margin-top: 100px;
+}
             
-            h1 {
-                font-size: 1.5rem;
-                padding: 0 15px;
-                margin-top: 100px;
-            }
+form {
+  padding: 15px;
+}
             
-            form {
-                padding: 15px;
-            }
+.footer-container {
+  flex-direction: column;
+  gap: 20px;
+}
             
-            .footer-container {
-                flex-direction: column;
-                gap: 20px;
-            }
+.footer-section {
+  text-align: center;
+}
             
-            .footer-section {
-                text-align: center;
-            }
-            
-            .social-icons {
-                justify-content: center;
-            }
-        }
+.social-icons {
+  justify-content: center;
+ }
+}
 
 /* ====================
    SECCIÓN HERO / BUSCADOR
