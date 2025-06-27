@@ -1,0 +1,306 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap');
+
+/* ====================
+   RESETEO BÁSICO
+==================== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* MENU DE NAVEGACIÓN */
+
+.Encabezado {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    background-color: white;
+    position: relative;
+    flex-wrap: wrap;
+}
+
+.logo-container img {
+    width: 220px;
+    height: auto;
+    transition: transform 0.3s ease;
+}
+
+.logo-container img:hover {
+    transform: scale(1.05);
+}
+
+/* MENÚ DE NAVEGACIÓN */
+.menu {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+.styled-link {
+    position: relative;
+    color: #333;
+    text-decoration: none;
+    font-weight: 500;
+    font-family: "Lexend", sans-serif;
+    padding: 0.5rem 0;
+    transition: color 0.3s ease;
+}
+
+.styled-link::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #1390ff;
+    visibility: hidden;
+    transform: scaleX(0);
+    transition: all 0.3s ease-in-out;
+}
+
+.styled-link:hover {
+    color: #1390ff;
+}
+
+.styled-link:hover::before {
+    visibility: visible;
+    transform: scaleX(1);
+}
+
+.carrito {
+  color: #000;
+  max-width: auto;
+  transform: scale(1.6);
+}
+
+.carrito:hover {
+  color: #1390ff;
+}
+
+/* BOTÓN */
+.boton {
+    background-color: #000000;
+    border-radius: 20px;
+    padding: 0.5rem 1.5rem;
+    transition: all 0.3s ease;
+    border: none;
+    cursor: pointer;
+}
+
+.boton a {
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+    font-family: "Lexend", sans-serif
+}
+
+.boton:hover {
+    background-color: #1390ff;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+
+/* CONTACTOS */
+h1 {
+    font-family: "Lexend", sans-serif;
+    font-weight: 700px;
+    font-style: normal;
+    text-align: center;
+}
+
+form h2 {
+    align-items: center;
+    margin-bottom: 30px;
+    text-align: center;
+    font-family: "Lexend", sans-serif;
+    font-weight: 500px;
+}
+
+form {
+    width: 450px;
+    margin: auto;
+    background-color: #edf2ff;
+    padding: 30px 20px;
+    border-radius: 15px;
+    margin-top: 50px;
+    box-sizing: border-box;
+}
+
+input, textarea {
+    width: 100%;
+    margin-bottom: 20px;
+    padding: 7px;
+    box-sizing: border-box;
+    border: none;
+    font-family: "Lexend", sans-serif;
+}
+
+textarea {
+    min-height: 100px;
+    max-height: 200px;
+    max-width: 100%;
+    font-family: "Lexend", sans-serif;
+}
+
+#boton {
+    background-color: #000000; 
+    border-radius: 20px;
+    padding: 10px;
+    margin-top: 15px;
+    transition: all 0.3s ease;
+    color: white;
+    font-family: "Lexend", sans-serif;
+}
+
+#boton:hover {
+     background-color: #1390ff;  
+     color: #e0e0e0;   
+     border-color: #1390ff;  
+}
+
+.destiny-footer {
+  background-color: #edf2ff;
+  color: #ffffff;
+  padding: 40px 20px 20px;
+  font-family: "Lexend", sans-serif;
+}
+
+.footer-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: 0 auto;
+  gap: 30px;
+}
+
+.footer-section {
+  flex: 1;
+  min-width: 200px;
+  margin-bottom: 20px;
+}
+
+.footer-title {
+  font-size: 18px;
+  margin-bottom: 15px;
+  color: #000000;
+  font-weight: 600;
+}
+
+.social-icons {
+  display: flex;
+  gap: 15px;
+}
+
+.social-icon ion-icon {
+  width: 42px;
+  height: 42px;
+  transition: transform 0.3s;
+  color: #000;
+}
+
+.footer-text {
+  margin: 8px 0;
+  color: #000000;
+  font-size: 14px;
+}
+
+.footer-links {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-links li {
+  margin-bottom: 8px;
+}
+
+.footer-links a {
+  color: #000000;
+  text-decoration: none;
+  transition: color 0.3s;
+  font-size: 14px;
+}
+
+.footer-links a:hover {
+  color: #1390ff;
+}
+
+/* ========== RESPONSIVE ========== */
+/* Tablet (768px - 1023px) */
+@media (max-width: 1023px) {
+  .Encabezado {
+    padding: 1rem;
+  }
+
+  .menu {
+    gap: 1rem;
+  }
+
+  form {
+    width: 90%;
+    max-width: 450px;
+  }
+}
+
+/* Móvil (hasta 767px) */
+@media (max-width: 767px) {
+  .Encabezado {
+    flex-direction: column;
+    padding: 1rem 0;
+  }
+
+  .logo-container img {
+    width: 160px; /* Logo un poco más pequeño */
+  }
+
+  .menu {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 0.8rem;
+    padding: 1rem 0;
+  }
+
+  .boton {
+    margin-top: 0.5rem;
+  }
+
+  h1 {
+    font-size: 1.5rem; /* Título más pequeño */
+    padding: 0 1rem;
+  }
+
+  .footer-container {
+    align-items: center;
+    text-align: center;
+    gap: 10px;
+  }
+
+.footer-section {
+    margin-bottom: 15px; /* Controla el espacio inferior de cada sección */
+    padding: 10px; /* Opcional: añade padding interno si se ven muy pegados al borde */
+  }
+
+  .social-icons {
+    justify-content: center;
+  }
+}
+
+/* Pequeños móviles (hasta 480px) */
+@media (max-width: 480px) {
+  .menu {
+    gap: 0.5rem;
+  }
+
+  .styled-link, .boton a {
+    font-size: 0.9rem;
+  }
+
+  .carrito {
+    transform: scale(1.3);
+  }
+}
