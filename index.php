@@ -19,7 +19,7 @@
 
     <nav class="menu">
       <a href="vuelos.php" class="styled-link">Vuelos</a>
-      <a href="pages/" class="styled-link">Paquetes</a>
+      <a href="paquetes.php" class="styled-link">Paquetes</a>
       <a href="hospedaje.php" class="styled-link">Hospedaje</a>
       <a href="autos.php" class="styled-link">Autos</a>
       <a href="contacto.php" class="styled-link">Contactos</a>

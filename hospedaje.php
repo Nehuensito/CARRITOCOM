@@ -4,7 +4,13 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Hospedaje | Destiny</title>
+  
+  <!-- Fuente Inter desde Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
+
+  <!-- Estilos -->
   <link rel="stylesheet" href="css/estilos.css" />
+
 </head>
 
 <body>
@@ -16,7 +22,7 @@
     </div>
     <nav class="menu">
       <a href="vuelos.php" class="styled-link">Vuelos</a>
-      <a href="pages/" class="styled-link">Paquetes</a>
+      <a href="paquetes.php" class="styled-link">Paquetes</a>
       <a href="hospedaje.php" class="styled-link">Hospedaje</a>
       <a href="autos.php" class="styled-link">Autos</a>
       <a href="contacto.php" class="styled-link">Contactos</a>
